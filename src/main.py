@@ -10,7 +10,7 @@ def vmap(f: Callable[[V], R], d: Dict[K, V]) -> Dict[K, R]:
     """map over dict values."""
     return {k: f(v) for (k, v) in d.items()}
 
-def first(t: Tuple[F, S]) -> F:
+def first(t: Tuple[F, S], /) -> F:
     """First item of 2-tuple."""
     return t[0]
 
